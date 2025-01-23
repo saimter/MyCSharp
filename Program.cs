@@ -6,52 +6,49 @@ namespace MyCSharp
     {
         static void Main(string[] args)
         {
-            byte x = 65;
+            Console.WriteLine("Hello World");
 
-            char c = 'A';
+            //  int
+            int n;
+            n = 5;
+            Console.WriteLine(n);
 
-            short y = 256;
-
-            float z = 10f;
-
-            double d = 10;
-
-            int a;
-
-            a = 256;
-
-            //string n = Console.ReadLine();
-            //x = int.Parse(n);
+            //  float
 
 
-            Console.WriteLine(x);
-            //Console.WriteLine(args[x]);
-            Console.WriteLine(y);
-
-            Console.WriteLine("Hello, World!");
-
+            //  char -> 유니코드 한글자 'A' -> 65
+            char c;
+            c = 'A';
             Console.WriteLine(c);
 
-            Console.WriteLine(d);
 
-            Console.WriteLine(a);
+            int korean = 10;     // camelcase
+            int mathmatics = 100;
+            int english = 50;
 
-            Console.WriteLine(3 + x);
+            int sum = korean + mathmatics + english;
+            Console.WriteLine(sum);
+
+            double average = Math.Round(sum / 3.0f, 2);
+            Console.WriteLine(average);
+
+            //  5개 기본 연산자 +,-,*,/,%
 
 
+            //Sonar Qub -오류검사
 
+
+            //  나눔고딕 코딩 il ol0
+            //  https://github.com/naver/nanumfont/releases/tag/VER2.51
+
+            //  배열 
+            int[] koreans = new int[10];
+            for (int i = 0; i < korean; i++)
+            {
+                koreans[i] = 1;
+            }
         }
     }
 }
-
-
-//  OOP
-
-
-// 단축키
-//  ctrl + z
-//  ctrl + y
-//  ctrl + K, ctrl + D
-//  ctrl + c
 
 
